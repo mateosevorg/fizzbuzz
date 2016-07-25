@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace fizzBuzz 
+{
+    class divisible
+    {
+        static void Main(string[] args)
+        {
+            // step 1 : print numbers from 1 to 100
+            for (int j = 1; j <= 100; j++)
+            {
+                string results = "";
+                // step 2 : divisible by 3 print fizz
+                if (j % 3 == 0) results = "fizz";
+                // step 3 : divisbile by 5 print buzz
+                if (j % 5 == 0) results = results + "buzz";
+                // step 4 : divisible by 3 and 5 print fizzbuzz
+                // step 5 : not divisible 3 or 5 print number
+                if (results.Length == 0) results = j.ToString();
+
+                Console.WriteLine(results);
+                Console.ReadLine();
+            }
+        }
+    }
+}
